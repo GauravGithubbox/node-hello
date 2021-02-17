@@ -4,13 +4,13 @@ const port2 = process.env.PORT2 || 3001;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello \n'
+  const msg = 'Hello Everyone !\n'
   res.end(msg);
 });
 
 const server2 = http.createServer((req, res) => {
 	res.statusCode = 200;
-	const msg2 = 'Hello again from Node!\n'
+	const msg2 = 'Hello again from gaurav \n'
 	res.end(msg2);
 });
 
@@ -20,4 +20,4 @@ server.listen(port, () => {
 
 server2.listen(port2, () => {
 	console.log(`Server2 running on http://localhost:${port2}/`);
-})
+}) 
